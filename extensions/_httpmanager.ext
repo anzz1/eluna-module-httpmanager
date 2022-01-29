@@ -1,0 +1,10 @@
+
+-- This extension will parse the HTTP result queue
+
+require("httpmanager")
+
+local function World_OnUpdate(event, diff)
+    httpmanager.HandleResponses()
+end
+
+RegisterServerEvent(13, World_OnUpdate) -- WORLD_EVENT_ON_UPDATE
