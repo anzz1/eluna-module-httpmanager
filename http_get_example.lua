@@ -1,5 +1,6 @@
 
 require("httpmanager")
+require("_httpmanager")
 
 -- command .ip to retrieve and display server public ip
 
