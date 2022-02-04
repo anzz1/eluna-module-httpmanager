@@ -10,8 +10,6 @@ $secret = "5ecret";
 if (isset($_POST["s"]) && isset($_POST["c"])) {
   $s = $_POST["s"];
   $c = $_POST["c"];
-  error_log($s);
-  error_log($c);
   if ($s == $secret && is_numeric($c) && $c >= 0 && $c <= 99999) {
       file_put_contents('online.txt', $c);
       exit();
